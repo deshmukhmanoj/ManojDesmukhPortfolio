@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Set base font size for better scaling */
+html {
+    font-size: 16px;
+    /* Base for rem calculations */
+}
+
+body {
+    font-size: 0.875rem;
+    /* 14px base for body */
+    line-height: 1.5;
+}
+
+/* Headings */
+h1 {
+    font-size: 1.875rem;
+    /* 30px */
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    /* 24px */
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 600;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.5rem;
+        /* 24px on mobile */
+    }
+
+    body {
+        font-size: 0.8125rem;
+        /* 13px on mobile */
+    }
+}
