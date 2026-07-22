@@ -2,8 +2,20 @@ import { motion } from "framer-motion";
 
 const About = () => {
   const skills = {
-    frontend: ["React.js", "JavaScript (ES6+)", "Tailwind CSS", "HTML5/CSS3", "Redux Toolkit"],
-    backend: ["Node.js", "Express.js", "REST APIs", "JWT", "Crypt.js"],
+    frontend: [
+      "React.js",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "HTML5/CSS3",
+      "Tailwind CSS",
+      "Bootstrap",
+      "React Hook Form",
+      "React Router DOM",
+      "Redux",
+      "Redux Toolkit"
+    ],
+    backend: ["Node.js", "Express.js", "REST APIs", "JWT", "Bcrypt.js"],
+    desktop: ["VB.NET Windows Forms"],
     database: ["SQL Server", "MongoDB"],
     tools: ["Git", "GitHub", "VS Code", "Postman"]
   };
@@ -29,7 +41,7 @@ const About = () => {
           <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
             <h2 className="text-2xl font-semibold mb-4 text-blue-400">Who Am I?</h2>
             <p className="text-gray-300 leading-relaxed">
-              Full Stack JavaScript Developer with 2.4 years of experience building 
+              Full Stack JavaScript Developer with 2.5 years of experience building 
               scalable and secure web applications. Passionate about shipping end-to-end 
               features, solving real-world business problems, and working in fast-paced 
               startup and remote environments.
@@ -45,7 +57,7 @@ const About = () => {
               </li>
               <li className="flex items-start">
                 <span className="text-blue-400 mr-2">•</span>
-                Secure authentication systems using JWT and Crypt.js
+                Secure authentication systems using JWT and Bcrypt.js
               </li>
               <li className="flex items-start">
                 <span className="text-blue-400 mr-2">•</span>
@@ -91,6 +103,20 @@ const About = () => {
                 <span
                   key={index}
                   className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+            <h2 className="text-2xl font-semibold mb-4 text-blue-400">Desktop</h2>
+            <div className="flex flex-wrap gap-2">
+              {skills.desktop.map((skill, index) => (
+                <span
+                  key={index}
+                  className="px-3 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-sm"
                 >
                   {skill}
                 </span>
